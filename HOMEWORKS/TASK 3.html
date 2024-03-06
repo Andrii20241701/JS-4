@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- - За допомогою циклу while вивести в документ 20 блоків h1 -->
+<!--c довільним текстом і індексом всередині.-->
+<script>
+    let i=0;
+    while (i<=20) {
+        document.write('<div><h1>Hello<h1></div>',i);
+        i++;
+    }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // <!-- - Використовуючи данні з масиву, за допомоги document.write та циклу-->
+    // <!--побудувати структуру по шаблону-->
+    // Масив:
+    //
+    // let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react',
+    // 'angular', 'node.js'];
+    //
+    // ШАБЛОН:
+    // <ul>
+    //   <li>ITEM OF ARRAY</li>
+    //   <!--
+    //       і тд інші об'єкти масиву
+    //        ...
+    //        ...
+    //        ...
+    //   -->
+    // </ul>
+    //
+    // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список
+    // з даними з масиву
+    let listOfItems = [
+        'html',
+        'css',
+        'javascript',
+        'mysql',
+        'mongodb',
+        'react',
+        'angular',
+        'node.js'];
+
+    document.write('<ul>')
+    for (const list of listOfItems) {
+        document.write(`<li>${list}</li>`)
+    }
+    document.write('</ul>')
+
+</script>
+</body>
+</html>
